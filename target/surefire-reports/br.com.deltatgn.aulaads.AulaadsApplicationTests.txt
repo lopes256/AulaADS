@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: br.com.deltatgn.aulaads.AulaadsApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.39 s - in br.com.deltatgn.aulaads.AulaadsApplicationTests

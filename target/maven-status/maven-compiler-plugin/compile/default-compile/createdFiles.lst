@@ -1,0 +1,4 @@
+br\com\deltatgn\aulaads\ServletInitializer.class
+br\com\deltatgn\aulaads\AulaadsApplication.class
+br\com\deltatgn\aulaads\model\Professor.class
+br\com\deltatgn\aulaads\model\Curso.class
