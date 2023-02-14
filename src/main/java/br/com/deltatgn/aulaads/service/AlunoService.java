@@ -68,7 +68,7 @@ public class AlunoService {
         }).orElseThrow(() -> {
             log.debug("Alterar -> Código: {}, Aluno não encontrado.", codigoAluno);
             return new ResponseStatusException(HttpStatus.NOT_FOUND,
-                    "Código: " + codigoAluno + ", Dashboard não encontrado.");
+                    "Código: " + codigoAluno + ", Aluno não encontrado.");
         });
     }
 

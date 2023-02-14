@@ -12,9 +12,11 @@ D:\Usuario\Jammerson\Documents\Projetos\Visual Code\AulaADS\src\main\java\br\com
 D:\Usuario\Jammerson\Documents\Projetos\Visual Code\AulaADS\src\main\java\br\com\deltatgn\aulaads\dto\CursoInsertDTO.java
 D:\Usuario\Jammerson\Documents\Projetos\Visual Code\AulaADS\src\main\java\br\com\deltatgn\aulaads\model\Curso.java
 D:\Usuario\Jammerson\Documents\Projetos\Visual Code\AulaADS\src\main\java\br\com\deltatgn\aulaads\dto\AlunoInsertDTO.java
+D:\Usuario\Jammerson\Documents\Projetos\Visual Code\AulaADS\src\main\java\br\com\deltatgn\aulaads\service\ProfessorService.java
 D:\Usuario\Jammerson\Documents\Projetos\Visual Code\AulaADS\src\main\java\br\com\deltatgn\aulaads\dto\AlunoDTO.java
 D:\Usuario\Jammerson\Documents\Projetos\Visual Code\AulaADS\src\main\java\br\com\deltatgn\aulaads\dto\ProfessorInsertDTO.java
 D:\Usuario\Jammerson\Documents\Projetos\Visual Code\AulaADS\src\main\java\br\com\deltatgn\aulaads\dto\ProfessorDTO.java
 D:\Usuario\Jammerson\Documents\Projetos\Visual Code\AulaADS\src\main\java\br\com\deltatgn\aulaads\model\AulasId.java
 D:\Usuario\Jammerson\Documents\Projetos\Visual Code\AulaADS\src\main\java\br\com\deltatgn\aulaads\repository\ProfessorRepository.java
 D:\Usuario\Jammerson\Documents\Projetos\Visual Code\AulaADS\src\main\java\br\com\deltatgn\aulaads\ServletInitializer.java
+D:\Usuario\Jammerson\Documents\Projetos\Visual Code\AulaADS\src\main\java\br\com\deltatgn\aulaads\controller\ProfessorController.java

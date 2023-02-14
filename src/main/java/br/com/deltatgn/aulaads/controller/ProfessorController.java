@@ -6,7 +6,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.http.HttpStatus;
-import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -16,44 +15,45 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
-import br.com.deltatgn.aulaads.dto.AlunoDTO;
-import br.com.deltatgn.aulaads.service.AlunoService;
+
+import br.com.deltatgn.aulaads.dto.ProfessorDTO;
+import br.com.deltatgn.aulaads.service.ProfessorService;
 
 @RestController
-@RequestMapping("/aluno")
-public class AlunoController {
+@RequestMapping("/professor")
+public class ProfessorController {
 
     @Autowired
-    private AlunoService alunoService;
+    private ProfessorService professorService;
 
     @GetMapping
     @Transactional(readOnly = true)
-    public ResponseEntity<List<AlunoDTO>> listarAlunos() {
-        List<AlunoDTO> lista = alunoService.findAll();
+    public ResponseEntity<List<ProfessorDTO>> listarProfessores() {
+        List<ProfessorDTO> lista = professorService.findAll();
         return ResponseEntity.ok(lista);
     }
 
-    @GetMapping("/{codigoAluno}")
+    @GetMapping("/{codigoProfessor}")
     @Transactional(readOnly = true)
-    public AlunoDTO pesquisar(@PathVariable Long codigoAluno) {
-        return alunoService.findById(codigoAluno);
+    public ProfessorDTO pesquisar(@PathVariable Long codigoProfessor) {
+        return professorService.findById(codigoProfessor);
     }
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public AlunoDTO salvarNovoAluno(@RequestBody AlunoDTO alunoDTO) {
-        return alunoService.salvarAlunoDTO(alunoDTO);
+    public ProfessorDTO salvaProfessorDTO(@RequestBody ProfessorDTO professorDTO) {
+        return professorService.salvaProfessorDTO(professorDTO);
     }
 
     @PutMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public AlunoDTO alterarAluno(@RequestBody AlunoDTO alunoDTO) {
-        return alunoService.updateAluno(alunoDTO);
+    public ProfessorDTO alteraProfessor(ProfessorDTO professorDTO) {
+        return professorService.updaProfessor(professorDTO);
     }
 
-    @DeleteMapping("/{codigoAluno}")
-    @ResponseStatus(HttpStatus.NO_CONTENT)
-    public void deleteAluno(@PathVariable Long codigoAluno) {
-        alunoService.deleteAlunoDTO(codigoAluno);
+    @DeleteMapping("/{codigoProfessor}")
+    public void deleteProfessor(@PathVariable Long codigoProfessor) {
+        professorService.deleteProfessor(codigoProfessor);
     }
+
 }
